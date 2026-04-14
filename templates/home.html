@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - My Portfolio{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Hello, <span class="highlight"> Ojo Temitope is my name.</span></h1>
+            <p class="hero-subtitle">Backend Engineer | Django Enthusiast | Data Scientist </p>
+            <p class="hero-description">
+                
+Detail-oriented Backend Engineer with extensive experience in the Python (Django) ecosystem and 
+growing proficiency in Node.js and FastAPI. Specialized in architecting secure financial systems,
+ real-time data streaming, and scalable RESTful APIs. 
+
+ Proven ability to implement complex logic such as double-entry ledgers, build and integrate restful APIs  and high-concurrency leaderboards. 
+ Seeking to leverage technical expertise in a fast-paced, international engineering team.
+
+
+
+            </p>
+            <div class="hero-buttons">
+                <a href="{% url 'projects' %}" class="btn btn-primary">View My Work</a>
+                <a href="{% url 'contact' %}" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2 class="section-title">What I Do</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon">💻</div>
+                <h3> Backend Website  Development</h3>
+                <p>Building responsive and modern web applications using Django and Python.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3> API DEVELOPMENT </h3>
+                <p>Creating beautiful and intuitive user interfaces that users love.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Problem Solving</h3>
+                <p>Turning complex problems into simple, elegant solutions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
