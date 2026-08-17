@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}About - My Portfolio{% endblock %}
 
@@ -15,25 +16,28 @@
         <div class="about-grid">
             <div class="about-text">
                 <h2>Hi, I'm a Django Developer</h2>
-                <p>
-                    I'm passionate about web development and creating applications that make a difference. 
-                    With a strong foundation in Python and Django, I love bringing ideas to life through code.
+                <p>Ojo Temitope is a backend software engineer with hands-on experience building RESTful APIs and backend 
+systems using Python, Django, Django REST Framework, and Golang. Experienced in API design 
+and integration, database design, authentication and authorization, background processing, 
+caching, and server-side business logic. Built practical logistics, quiz, expense management, and 
+fintech wallet systems using PostgreSQL, SQLite, Redis, Celery, JWT authentication, Git, and 
+API testing. Strong problem-solving and debugging skills with a focus on scalable, maintainable, 
+and reliable backend systems. 
                 </p>
                 <p>
-                    My journey in web development started with curiosity and has grown into a passion for 
+                    My journey into software  development started with curiosity and has grown into a passion for 
                     building scalable, efficient, and user-friendly applications. I believe in continuous 
                     learning and always strive to improve my skills.
                 </p>
                 <p>
-                    When I'm not coding, you can find me reading tech blogs, contributing to open-source 
-                    projects, or exploring new technologies.
+                    When I'm not coding, I will be in the court playing table tennis, or playing guitar.
                 </p>
             </div>
             
             <div class="about-image">
-                <div class="image-placeholder">
-                    <p>Your Photo Here</p>
-                   
+                    <img src="{% static 'images/profile.png' %}" alt="Ojo Temitope John">
+</div>
+                   Get-ChildItem .\static\images
                 </div>
             </div>
         </div>
